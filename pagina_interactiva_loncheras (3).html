@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loncheras Saludables Junín</title>
+  <style>
+  body { background:#fff6fb; font-family:'Poppins', sans-serif; }
+  .card { background:white; border-radius:20px; padding:25px; margin:20px 0; border:3px solid #ffc2e2; box-shadow:0 4px 10px rgba(255,150,200,0.3); }
+  h2 { color:#b30086; font-weight:800; }
+  .btn { background:#ff8ac0; color:white; padding:12px 18px; border-radius:12px; font-weight:700; }
+  .btn:hover { background:#ff5fa6; }
+  .img-group { display:flex; gap:10px; flex-wrap:wrap; }
+  .img-group img { width:48%; border-radius:15px; border:3px solid #ffd6eb; }
+</style>
+</head>
+<body>
+  <header style="background:linear-gradient(90deg,#ffb3c6,#ffdfec); padding:30px; text-align:center; color:#4d004d; border-bottom:5px solid #ff8ac0;">
+  <h1 style="font-size:36px; font-weight:800; text-shadow:2px 2px #ffffff;">🍓 Loncheras Saludables con Pedrería 🍱✨</h1>
+  <p style="font-size:18px; font-weight:600;">Recetas ricas, coloridas y hechas con productos de Junín 💛</p>
+</header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Menú Semanal Sugerido</h2>
+      <p>Haz clic en cada día para ver su lonchera y receta.</p>
+      <a class="btn" onclick="mostrar('lunes')">Lunes</a>
+      <a class="btn" onclick="mostrar('martes')">Martes</a>
+      <a class="btn" onclick="mostrar('miercoles')">Miércoles</a>
+      <a class="btn" onclick="mostrar('jueves')">Jueves</a>
+      <a class="btn" onclick="mostrar('viernes')">Viernes</a>
+    </div>
+
+    <div id="lunes" class="card hidden">
+  <h2>🍓 Lunes: Quinua con Frutas</h2>
+  <div class="img-group">
+    <img src="https://cdn.pixabay.com/photo/2016/02/23/17/15/quinua-1214921_1280.jpg" alt="Quinua">
+    <img src="https://cdn.pixabay.com/photo/2017/01/03/17/35/apple-1958139_1280.jpg" alt="Frutas">
+  </div>
+  <p><b>Ingredientes:</b> Quinua, manzana, miel.</p>
+  <p><b>Preparación:</b> Cocinar la quinua, mezclar con frutas picadas y un chorrito de miel.</p>
+</div> alt="Quinua con frutas">
+      <p><b>Ingredientes:</b> quinua, manzana, miel.</p>
+      <p><b>Preparación:</b> Cocinar la quinua, mezclar con frutas picadas y un toque de miel.</p>
+    </div>
+
+    <div id="martes" class="card hidden">
+  <h2>🥑 Martes: Sándwich de Palta</h2>
+  <div class="img-group">
+    <img src="https://cdn.pixabay.com/photo/2017/01/20/15/06/avocado-1991025_1280.jpg" alt="Palta">
+    <img src="https://cdn.pixabay.com/photo/2017/06/02/18/24/bread-2364028_1280.jpg" alt="Pan integral">
+  </div>
+  <p><b>Ingredientes:</b> Pan integral, palta, tomate.</p>
+  <p><b>Preparación:</b> Aplastar la palta y untarla; agregar tomate fresco.</p>
+</div> alt="Sandwich de palta">
+      <p><b>Ingredientes:</b> pan integral, palta, tomate.</p>
+      <p><b>Preparación:</b> Triturar la palta, untar en el pan y añadir rodajas de tomate.</p>
+    </div>
+
+    <div id="miercoles" class="card hidden">
+  <h2>🌽 Miércoles: Ensalada de Tarwi</h2>
+  <div class="img-group">
+    <img src="https://cdn.pixabay.com/photo/2018/03/06/21/41/lupins-3204561_1280.jpg" alt="Tarwi">
+    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/tomatoes-1238255_1280.jpg" alt="Tomate y cebolla">
+  </div>
+  <p><b>Ingredientes:</b> Tarwi, cebolla, tomate, limón.</p>
+  <p><b>Preparación:</b> Mezclar todo picado con limón.</p>
+</div> alt="Ensalada de tarwi">
+      <p><b>Ingredientes:</b> tarwi, cebolla, tomate, limón.</p>
+      <p><b>Preparación:</b> Mezclar todo finamente picado y agregar limón.</p>
+    </div>
+
+    <div id="jueves" class="card hidden">
+  <h2>🥔 Jueves: Papa con Queso</h2>
+  <div class="img-group">
+    <img src="https://cdn.pixabay.com/photo/2016/04/25/23/29/potatoes-1357615_1280.jpg" alt="Papas nativas">
+    <img src="https://cdn.pixabay.com/photo/2016/11/21/17/46/cheese-1846087_1280.jpg" alt="Queso fresco">
+  </div>
+  <p><b>Ingredientes:</b> Papas nativas, queso fresco.</p>
+  <p><b>Preparación:</b> Sancochar la papa y acompañar con queso.</p>
+</div> alt="Papa con queso">
+      <p><b>Ingredientes:</b> papas nativas, queso fresco.</p>
+      <p><b>Preparación:</b> Sancochar las papas y acompañar con queso.</p>
+    </div>
+
+    <div id="viernes" class="card hidden">
+  <h2>🍮 Viernes: Mazamorra de Kiwicha</h2>
+  <div class="img-group">
+    <img src="https://cdn.pixabay.com/photo/2016/05/20/16/42/amaranth-1401902_1280.jpg" alt="Kiwicha">
+    <img src="https://cdn.pixabay.com/photo/2018/04/18/18/56/porridge-3330673_1280.jpg" alt="Mazamorra">
+  </div>
+  <p><b>Ingredientes:</b> Kiwicha, leche, azúcar.</p>
+  <p><b>Preparación:</b> Cocinar la kiwicha y espesar con leche.</p>
+</div> alt="Mazamorra de kiwicha">
+      <p><b>Ingredientes:</b> kiwicha, leche, azúcar.</p>
+      <p><b>Preparación:</b> Cocinar la kiwicha y mezclar con un poco de leche para espesar.</p>
+    </div>
+
+    <div class="card">
+      <h2>Premio por Acceder</h2>
+      <p>Si visitas esta plataforma más de 3 veces por semana, puedes activar la opción "Ahorro Saludable". Esta sección acumula un monto simbólico que podrás canjear en un banco aliado.</p>
+      <a class="btn" onclick="mostrar('ahorro')">Ver mi ahorro</a>
+    </div>
+
+    <div id="ahorro" class="card hidden" style="background:#ffe0f2; border:3px solid #ff9ad1;">
+  <h2>💖 Ahorro Saludable para Mamás</h2>
+  <img src="https://cdn.pixabay.com/photo/2017/01/16/19/40/piggy-bank-1987788_1280.jpg" style="width:60%; margin:auto; display:block; border-radius:20px; border:3px solid #ffb7dd;">
+  <p style="font-size:17px; font-weight:600; color:#b30086;">
+    Cada vez que la mamá ingresa 3 veces por semana al QR, acumula 💲puntos de ahorro que podrá retirar cuando quiera.
+  </p>
+  <p>Este sistema está pensado para ayudar a las familias con bajo presupuesto y promover loncheras saludables.</p>
+</div>
+
+  </div>
+
+  <script>
+    function mostrar(id){
+      document.querySelectorAll('.card').forEach(c => { if(c.id) c.classList.add('hidden'); });
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
